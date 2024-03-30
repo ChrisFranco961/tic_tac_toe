@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script1.js" defer></script>
+</head>
+<body>
+   
+    <div id=start>
+        <div id="title"> Choose your name</div>
+      <div id="choose"><div id="playerone">  <label for="player1"> Player 1 : </label>
+        <input type="text" name="player1" id="player1" required maxlength="8"></div>
+        <div id="playertwo"><label for="player2">Player 2 :</label>
+        <input type="text" id="player2" name="player2" required maxlength="8"></div></div>
+        <button onclick="game.chooseplayer()" id="startgame" > Start Game</button>
+    </div>
+    <div id="dash">
+        <div id="result"></div>
+    <div id="score">
+        <div><div id="name1">goodby</div>
+        <div id="score_x">0</div></div>
+        <div><div id="name2">hello</div> <div id="score_o">0</div></div></div>
+    
+    </div>
+    
+    <div id="game_container">
+        
+            <div class="xo" onclick="game.playerclick(game.square1)"  id="1"></div>
+            <div class="xo" onclick="game.playerclick(game.square2)" id="2"></div>
+            <div class="xo" onclick="game.playerclick(game.square3)" id="3"></div>
+        
+        
+            <div class="xo" onclick="game.playerclick(game.square4)" id="4"></div>
+            <div class="xo" onclick="game.playerclick(game.square5)" id="5"></div>
+            <div class="xo" onclick="game.playerclick(game.square6)" id="6"></div>
+        
+        
+            <div class="xo" onclick="game.playerclick(game.square7)" id="7"></div>
+            <div class="xo" onclick="game.playerclick(game.square8)" id="8"></div>
+            <div class="xo" onclick="game.playerclick(game.square9)" id="9"></div>
+        
+    </div>
+    <button id="resetbutton" onclick="game.Resetgame()">Reset</button>
+</body>
+</html>
